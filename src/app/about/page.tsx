@@ -17,12 +17,15 @@ export default function About() {
   return (
     <div>
       <h1 className='bg-green-600'>This is About Page</h1>
-      {data.map((todo) => (
-        <div key={todo.key}>
-          <h3>{todo.title}</h3>
-          <h3>{todo.completed}</h3>
-        </div>
-      ))}
+      <div>
+        {" "}
+        {data.map((todo) => (
+          <div key={todo.id}>
+            <h3>{todo.title}</h3>
+            <h3>{todo.completed}</h3>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
